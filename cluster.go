@@ -357,7 +357,6 @@ func (c *clusterNodes) Get(addr string) (*clusterNode, error) {
 }
 
 func (c *clusterNodes) get(addr string) (*clusterNode, error) {
-	fmt.Println("GETTING")
 	var node *clusterNode
 	var err error
 	c.mu.RLock()
@@ -1533,6 +1532,8 @@ func (c *ClusterClient) cmdsInfo() (map[string]*CommandInfo, error) {
 		}
 
 		info, err := node.Client.Command().Result()
+		fmt.Println(info)
+		fmt.Println(err)
 		if err == nil {
 			return info, nil
 		}
