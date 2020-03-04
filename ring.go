@@ -10,10 +10,10 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/go-redis/redis/v7/internal"
-	"github.com/go-redis/redis/v7/internal/consistenthash"
-	"github.com/go-redis/redis/v7/internal/hashtag"
-	"github.com/go-redis/redis/v7/internal/pool"
+	"github.com/budipang/go-redis-fork/internal"
+	"github.com/budipang/go-redis-fork/internal/consistenthash"
+	"github.com/budipang/go-redis-fork/internal/hashtag"
+	"github.com/budipang/go-redis-fork/internal/pool"
 )
 
 // Hash is type of hash function used in consistent hash.

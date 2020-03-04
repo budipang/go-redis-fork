@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/go-redis/redis/v7/internal/util"
+	"github.com/budipang/go-redis-fork/internal/util"
 )
 
 const (
